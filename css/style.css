@@ -1,0 +1,217 @@
+/*min-width: 800 er 800px eller større*/
+
+/*max-width: 799 er 799px eller mindre*/
+
+/*GLOBAL
+__________________*/
+* {
+    box-sizing: border-box;
+}
+/*header*/
+header .logo {
+    width: 100%;
+}
+
+/*navigation*/
+nav {
+    margin: 0;
+}
+
+.menu {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    color: black;
+    background-color: #D0DE9C;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 2px;
+}
+
+.menu a:hover {
+    background-color: #B1C760;
+    color: black;
+}
+
+.menu a.active {
+    background-color: #758E1C;
+    color: white;
+}
+
+/*body*/
+main {
+    background-color: whitesmoke;
+
+}
+
+.content {
+    width: 100%;
+}
+
+html {
+    font-family: 'Jaldi', sans-serif;
+}
+body {
+    text-align: center;
+}
+
+section.dagsprogram {
+    text-align: left; 
+}
+
+/*Jordan style*/
+.jordan {
+    width: 100%;
+}
+
+/*Marokko Style*/
+.marokko {
+    width: 100%;
+}
+
+/*Sri Lanka Style*/
+.srilanka {
+    width: 100%;
+} 
+
+/*Vietnam Style*/
+.vietnam {
+    width: 100%;
+}
+
+/*lister*/
+ul{
+    text-align: left;
+}
+/*footer*/
+footer {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background: url(../images/logo-h.png); 
+    background-size: 50%;
+    align-items: center; 
+}
+.foot {
+    background: rgba(117, 142, 28, 0.8);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.foot a {
+    background-color: #B1C760;
+    padding: 15px 14px;
+    margin: 5px;
+    display: list-item;
+    color: black;
+    list-style-type: none;
+    font-style: normal;
+    
+}
+.foot a:link {
+    text-decoration: none;
+}
+.foot a:hover {
+    text-decoration: underline;
+}
+
+.foot p {
+    font-style: normal;
+}
+
+.kontakt {
+    font-size: 24px;
+    font-style: normal;
+}
+/*LAPTOP
+___________________*/
+
+@media screen and (min-width: 630px) {
+    /*navigation*/
+    .content {
+        width: 70%;
+        margin: 0 auto;
+    }
+    nav {
+        margin: 0;
+        position: relative;
+    }
+    .menu {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+    }
+    .menu a {
+        align-self: center;
+    }
+    header .logo {
+        width: 60%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }
+    footer {
+        background: url(../images/horisont-logo-lys.PNG);
+        background-size: 100%;
+    }
+    .foot a {
+        display: inline-block;
+    }
+    
+.jordan {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 80%;
+    
+}
+.marokko {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.srilanka {
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+} 
+
+.vietnam {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+body {
+    text-align: justify;
+}
+}
+/*DESKTOP
+___________________*/
+@media screen and (min-width: 770px){
+    .column {
+        display: flex;
+        flex-direction: row; 
+    }
+    .hele {
+        margin-left: 10px;
+    }
+    .tryghed {
+        margin-right: 10px;
+    }
+}
